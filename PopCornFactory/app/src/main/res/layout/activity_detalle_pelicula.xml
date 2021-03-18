@@ -63,6 +63,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/maintext"
         android:textStyle="italic"
+        android:textAlignment="center"
         android:layout_marginTop="7dp"/>
 
 </LinearLayout>

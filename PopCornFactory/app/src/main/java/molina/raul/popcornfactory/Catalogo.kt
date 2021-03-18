@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -59,12 +60,13 @@ class Catalogo: AppCompatActivity(){
             vista.tv_nombre_pelicula.setText(pelicula.titulo)
 
             vista.iv_pelicula.setOnClickListener {
+                var seatsAvailable = 20 - pelicula.seats.size
                 var intent = Intent(context, DetallePelicula::class.java)
                 intent.putExtra("titulo", pelicula.titulo)
                 intent.putExtra("sinopsis", pelicula.sinopsis)
                 intent.putExtra("header", pelicula.header)
                 intent.putExtra("image", pelicula.image)
-                intent.putExtra("numberSats", (20-pelicula.seats.size))
+                intent.putExtra("numberSats", (seatsAvailable))
                 intent.putExtra("pos", p0)
                 context!!.startActivity(intent)
             }
