@@ -11,6 +11,7 @@
         android:theme="@style/Theme.PopCornFactory">
         <activity android:name=".SeatSelection"></activity>
         <activity android:name=".DetallePelicula" />
+        <activity android:name=".Catalogo" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

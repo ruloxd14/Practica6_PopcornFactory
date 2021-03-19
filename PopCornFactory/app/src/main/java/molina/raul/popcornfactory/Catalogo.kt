@@ -54,10 +54,10 @@ class Catalogo: AppCompatActivity(){
 
         override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
             var pelicula = peliculas[p0]
-            var inflator = context!!.getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var vista = inflator.inflate(R.layout.pelicula, null)
             vista.iv_pelicula.setImageResource(pelicula.image)
-            vista.tv_nombre_pelicula.setText(pelicula.titulo)
+            vista.iv_text.setText(pelicula.titulo)
 
             vista.iv_pelicula.setOnClickListener {
                 var seatsAvailable = 20 - pelicula.seats.size
