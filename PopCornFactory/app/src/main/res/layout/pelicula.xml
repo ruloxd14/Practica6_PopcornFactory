@@ -8,22 +8,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <ImageView
             android:id="@+id/iv_pelicula"
             android:layout_width="113dp"
             android:layout_height="83dp"
             android:layout_gravity="center"
-            android:src="@drawable/bones"/>
-
+            android:src="@drawable/bones" />
+    
         <TextView
             android:id="@+id/iv_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="titulo"
-            android:textSize="15sp"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:textColor="@color/fondoboton"/>
+            android:text="titulo"
+            android:textColor="@color/fondoboton"
+            android:textSize="15sp" />
 
     </LinearLayout>
 </LinearLayout>
